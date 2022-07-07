@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+<title>cps</title>
+</head>
+<body style="text-align: center;">
+<h1>click as fast as you can</h1>
+<p id="clicks">‎ </p>
+<button id="btn">clickme</button>
+<script>
+var clickcount = 0.0;
+document.getElementById("btn").addEventListener("click", clicked);
+
+function clicked() {
+  clickcount++;
+  console.log(clickcount.toString() + " clicks");
+  document.getElementById("clicks").textContent = clickcount.toString() + " clicks";
+}
+</script>
+</body>
